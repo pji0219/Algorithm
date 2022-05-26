@@ -2,8 +2,8 @@
 
 function solution(n) {
   let answer;
-  
-  answer = Math.ceil(n / 12); // 소수점은 올림
+
+  answer = Math.ceil(n / 12); // 나머지는 올림
 
   return answer;
 }

@@ -1,14 +1,14 @@
 // 세 수 중 최소값 구하기
 
-function solution(a, b, c){
-  let answer;
+function solution(a, b, c) {
+  let anwser;
 
-  if(a < b) answer = a;
-  else answer = b;
+  if (a < b) anwser = a;
+  else anwser = b;
 
-  if(c < answer) answer = c;
+  if (c < anwser) anwser = c;
 
-  return answer;
+  return anwser;
 }
 
-console.log(solution(6, 5, 11));
+console.log(solution(5, 6, 11));
