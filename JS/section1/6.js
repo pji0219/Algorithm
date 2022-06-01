@@ -2,7 +2,7 @@
 
 // 최소값
 function minSolution(arr) {
-  let answer = Math.min(...arr);
+  let answer;
 
   return answer;
 }
@@ -12,7 +12,7 @@ console.log(minSolution(arr1));
 
 // 최대값
 function maxSolution(arr) {
-  let answer = Math.max(...arr);
+  let answer;
 
   return answer;
 }
