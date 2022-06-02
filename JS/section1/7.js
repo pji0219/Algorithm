@@ -7,18 +7,13 @@ function solution(arr) {
   let min = 100;
 
   // 홀수 구하고
-  oddNum = arr.filter((num) => num % 2 !== 0);
 
   // 구한 홀수를 합함
-  const sum = oddNum.reduce((acc, crr) => acc + crr, 0);
+
   answer.push(sum);
 
   // 구한 홀수들중 최소값을 구함
-  arr
-    .filter((num) => num % 2 != 0)
-    .forEach((num) => {
-      if (num < min) min = num;
-    });
+
   answer.push(min);
 
   return answer;
@@ -33,13 +28,9 @@ function solution2(arr) {
   let sum = 0,
     min = 100;
   for (let x of arr) {
-    if (x % 2 === 1) {
-      sum += x;
-      if (x < min) min = x;
-    }
   }
-  answer.push(sum);
-  answer.push(min);
+  answer.push();
+  answer.push();
   return answer;
 }
 
