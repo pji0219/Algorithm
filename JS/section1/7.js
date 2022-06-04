@@ -4,16 +4,19 @@
 function solution(arr) {
   let answer = [];
   let oddNum;
+  let sum;
   let min = 100;
 
   // 홀수 구하고
-
+  oddNum = arr.filter((num) => num % 2 !== 0);
   // 구한 홀수를 합함
-
+  sum = oddNum.reduce((acc, crr) => acc + crr, 0);
   answer.push(sum);
 
   // 구한 홀수들중 최소값을 구함
-
+  oddNum.forEach((num) => {
+    if (num < min) min = num;
+  });
   answer.push(min);
 
   return answer;
@@ -27,10 +30,17 @@ function solution2(arr) {
   let answer = [];
   let sum = 0,
     min = 100;
-  for (let x of arr) {
+  for (let i of arr) {
+    // 홀수이면
+    if (i % 2 !== 0) {
+      // 홀수의 합을 구하고
+      sum += i;
+      // 홀수중 최소값을 구함
+      if (i < min) min = i;
+    }
   }
-  answer.push();
-  answer.push();
+  answer.push(sum);
+  answer.push(min);
   return answer;
 }
 
