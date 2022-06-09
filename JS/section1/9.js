@@ -4,7 +4,12 @@ function solution(arr) {
   let sum = answer.reduce((acc, crr) => acc + crr, 0);
 
   for (let i = 0; i < 8; i++) {
-    for (let j = 1; j < 9; j++) {}
+    for (let j = 1; j < 9; j++) {
+      if (sum - (arr[i] + arr[j]) === 100) {
+        arr.splice(j, 1);
+        arr.splice(i, 1);
+      }
+    }
   }
 
   return answer;
