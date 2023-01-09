@@ -1,3 +1,4 @@
+// 중복 문자 제거
 function solution(str) {
   let answer = '';
   //console.log(str.indexOf("K"));
