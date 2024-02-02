@@ -6,21 +6,13 @@
  */
 
 function solution(a, b) {
-  let answer = [];
+  let answer = '';
   for (let i = 0; i < a.length; i++) {
-    for (let j = 0; j < a.length; j++) {
-      if (
-        (a[i] === 1 && b[j] === 3) ||
-        (a[i] === 2 && b[j] === 1) ||
-        (a[i] === 3 && b[j] === 2)
-      ) {
-        answer.push('A');
-      } else {
-        answer.push('B');
-      }
-
-      if (a[i] === b[i]) answer.push('D');
-    }
+    if (a[i] === 1 && b[i] === 3) answer += 'A' + '';
+    else if (a[i] === 2 && b[i] === 1) answer += 'A' + '';
+    else if (a[i] === 3 && b[i] === 2) answer += 'A' + '';
+    else if (a[i] === b[i]) answer += 'D';
+    else answer += 'B' + '';
   }
 
   return answer;
