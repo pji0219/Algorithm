@@ -2,6 +2,7 @@
 function solution(str) {
   let answer = 'YES';
   // /[^a-z]/g : 글로벌 중에 a부터 z가 아닌 것을 찾아라
+  // replace(/[^a-z]/g, ''): 글로벌 중에 a부터 z가 아닌 것을 찾고 빈 문자열로 교체
   const s = str.toLowerCase().replace(/[^a-z]/g, '');
   console.log(s);
   console.log(s.split('').reverse().join(''));
